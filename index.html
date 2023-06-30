@@ -2,8 +2,137 @@
 <html>
 <head>
     <title>Calculater</title>
+     <style>
+            .cal-container
+            {
+                width: 300px;
+                background-color: black;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                padding-bottom: 50px;
+            }
+            .cal-brand
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+                padding: 15px;
+
+            }
+            .cal-text
+            {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 250px;
+                height: 50px;
+                margin-top: -15px;
+                background-color: #cccccc;
+
+            }
+            .small-screen-container
+            {
+               display: flex;
+               justify-content: end;
+               padding: 10px;
+               margin-right: 20px;
+            }
+
+            .small-screen
+            {
+                background-color:  #ff6666;
+                border: 1px solid black;
+                width: 15px;
+                height: 15px;
+            }
+            .but-row
+            {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 15px;
+
+            }
+
+            .cal-button
+            {
+               
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: none;
+            }
+
+            .but-calspan
+            {
+               width: 130px;
+               height: 50px;
+               border: none;
+               border-radius: 20px;
+            }
+
+            .but-color
+            {
+                background-color: #FF9800;
+                color: white;
+            }
+
+            .but-color1
+            {
+                background-color: #999999;
+            }
+
+            .but-color2
+            {
+                background-color: #595959;
+                color: white;
+            }
+
+        </style>
+
 </head>
 <body>
-    <h1>This is a Calculater project.</h1>    
+    <div class="cal-container">
+            <p class="cal-brand">CASIO<sup style="font-size: 8px;">TM</sup></p>
+            <input type="text" class="cal-text"/>
+            <div class="small-screen-container">
+                <div class="small-screen"></div>
+                <div class="small-screen"></div>
+                <div class="small-screen"></div>
+                <div class="small-screen"></div>
+            </div>
+
+            <div class="but-row">
+                <button class="cal-button but-color1">AC</button>
+                <button class="cal-button but-color1">/</button>
+                <button class="cal-button but-color1">%</button>
+                <button class="cal-button but-color">+</button>
+            </div>
+            <div class="but-row">
+                <button class="cal-button but-color2">7</button>
+                <button class="cal-button but-color2">8</button>
+                <button class="cal-button but-color2">9</button>
+                <button class="cal-button but-color">x</button>
+            </div>
+            <div class="but-row">
+                <button class="cal-button but-color2">4</button>
+                <button class="cal-button but-color2">5</button>
+                <button class="cal-button but-color2">6</button>
+                <button class="cal-button but-color">-</button>
+            </div>
+            <div class="but-row">
+                <button class="cal-button but-color2">1</button>
+                <button class="cal-button but-color2">2</button>
+                <button class="cal-button but-color2">3</button>
+                <button class="cal-button but-color">+</button>
+            </div>
+            <div class="but-row">
+                <button class="cal-button but-calspan but-color2">0</button>
+                <button class="cal-button but-color2">.</button>
+                <button class="cal-button but-color">=</button>
+               
+            </div>
+
+        </div>
+   
 </body>
 </html>
